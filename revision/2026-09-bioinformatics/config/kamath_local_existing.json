@@ -1,0 +1,5 @@
+{
+  "external_root": "../05-claim-support/external",
+  "processed_input_root": "../05-claim-support/inputs",
+  "work_root": "work/kamath"
+}

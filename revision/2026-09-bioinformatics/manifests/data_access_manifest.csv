@@ -1,0 +1,10 @@
+dataset,file_or_pattern,access_route,redistribution_status,package_action,notes
+FOUNDIN/PPMI restricted donor-level inputs,"authorized FOUNDIN workbooks, raw cell metadata, raw count matrices",restricted,not redistributed,document local input root only,"Requires authorized local access; do not publish donor-level clinical workbooks or credentials."
+FOUNDIN aggregate summaries,results_reference/aggregate_summaries/publication-independent CSV summaries,derived aggregate,staged,include selected summary tables,"Tables contain aggregate effects/omnibus summaries only; source raw data are not included."
+GSE243639 clinical metadata,GSE243639_Clinical_data.csv.gz,reused public source,download by script,download/verify from GEO,"Public GEO supplementary file."
+GSE243639 UMAP/cell annotations,GSE243639_UMAP_coordinates.xlsx,reused public source,download by script,download/verify from GEO,"Public GEO supplementary file."
+GSE243639 count table,GSE243639_Filtered_count_table.csv.gz,reused public source,download by script,download/verify from GEO,"Public raw count table; full public rerun uses this file."
+Kamath/GSE178265 raw matrix,"GSE178265_Homo_matrix.mtx.gz and companion files",reused public source,manual heavy download,document runnable path,"Large public matrix; not run in default CI."
+Kamath qs annotation,individualobject_seuratmetadataframe.qs,reused public source/licensing uncertain,manual placement,document provenance and uncertainty,"Publicly accessible during local analysis, but redistribution/license should be confirmed before deposition."
+Private reviewer/manuscript material,"reviewer text, private manuscripts, response drafts",private,not redistributed,excluded,"Do not include private peer-review correspondence in public code package."
+

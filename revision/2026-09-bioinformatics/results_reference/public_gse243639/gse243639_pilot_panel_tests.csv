@@ -1,0 +1,17 @@
+context,method,model,test,genes_tested,p_omnibus,statistic_mean_t2,p_holm_all_pilot_tests
+DA,rna_qc,age_sex,full_panel,23,0.44645,0.8514758902264907,1.0
+DA,rna_qc,age_sex,frozen_direction_profile,0,,,1.0
+DA,rna_qc,age_sex_PMI_RIN,full_panel,23,0.22875,0.984670874917324,1.0
+DA,rna_qc,age_sex_PMI_RIN,frozen_direction_profile,0,,,1.0
+DA_minus_other_neurons,rna_qc,age_sex,full_panel,0,,,1.0
+DA_minus_other_neurons,rna_qc,age_sex,frozen_direction_profile,0,,,1.0
+DA_minus_other_neurons,rna_qc,age_sex_PMI_RIN,full_panel,0,,,1.0
+DA_minus_other_neurons,rna_qc,age_sex_PMI_RIN,frozen_direction_profile,0,,,1.0
+DA,spearman_qc,age_sex,full_panel,23,0.3328,0.9623940438740675,1.0
+DA,spearman_qc,age_sex,frozen_direction_profile,0,,,1.0
+DA,spearman_qc,age_sex_PMI_RIN,full_panel,23,0.03305,1.865343856941898,0.5288
+DA,spearman_qc,age_sex_PMI_RIN,frozen_direction_profile,0,,,1.0
+DA_minus_other_neurons,spearman_qc,age_sex,full_panel,0,,,1.0
+DA_minus_other_neurons,spearman_qc,age_sex,frozen_direction_profile,0,,,1.0
+DA_minus_other_neurons,spearman_qc,age_sex_PMI_RIN,full_panel,0,,,1.0
+DA_minus_other_neurons,spearman_qc,age_sex_PMI_RIN,frozen_direction_profile,0,,,1.0

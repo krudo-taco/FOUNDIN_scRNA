@@ -1,0 +1,11 @@
+{
+  "external_root": "data/external",
+  "work_root": "work/public_gse243639",
+  "download": true,
+  "urls": {
+    "GSE243639_Clinical_data.csv.gz": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE243nnn/GSE243639/suppl/GSE243639_Clinical_data.csv.gz",
+    "GSE243639_UMAP_coordinates.xlsx": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE243nnn/GSE243639/suppl/GSE243639_UMAP_coordinates.xlsx",
+    "GSE243639_Filtered_count_table.csv.gz": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE243nnn/GSE243639/suppl/GSE243639_Filtered_count_table.csv.gz"
+  }
+}
+

@@ -1,0 +1,85 @@
+name: revision-2026-09-bioinformatics
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+      - "revision/**"
+    paths:
+      - "revision/2026-09-bioinformatics/**"
+      - ".github/workflows/revision-2026-09-bioinformatics.yml"
+      - "revision/2026-09-bioinformatics/ci/github-actions/revision-2026-09-bioinformatics.yml"
+  pull_request:
+    paths:
+      - "revision/2026-09-bioinformatics/**"
+      - ".github/workflows/revision-2026-09-bioinformatics.yml"
+      - "revision/2026-09-bioinformatics/ci/github-actions/revision-2026-09-bioinformatics.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: revision/2026-09-bioinformatics
+        shell: bash
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements.txt
+      - run: python tests/test_synthetic_kernels.py
+      - run: python tests/test_staging_helpers.py
+      - run: python tools/verify_package.py
+      - run: python tools/environment_report.py --out work/environment_synthetic.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: synthetic-verification-artifacts
+          path: |
+            revision/2026-09-bioinformatics/work/environment_synthetic.json
+
+  public-gse243639:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    defaults:
+      run:
+        working-directory: revision/2026-09-bioinformatics
+        shell: bash
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements.txt
+      - run: python run_public_gse243639.py --config config/public_gse243639.json
+      - run: python tools/make_summary_tables.py --work-root work/public_gse243639
+      - run: python tools/compare_results.py --profile gse243639_edges264 --observed work/public_gse243639/results/gse243639_pilot_all_edges.csv --reference results_reference/public_gse243639/gse243639_pilot_all_edges.csv --out work/public_gse243639/gse243639_edges264_comparison.json
+      - run: python tools/compare_results.py --profile gse243639_panel16 --observed work/public_gse243639/results/gse243639_pilot_panel_tests.csv --reference results_reference/public_gse243639/gse243639_pilot_panel_tests.csv --out work/public_gse243639/gse243639_panel16_comparison.json
+      - run: python tools/environment_report.py --out work/public_gse243639/environment_public_gse243639.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-gse243639-rerun-artifacts
+          path: |
+            revision/2026-09-bioinformatics/work/public_gse243639/results/*.csv
+            revision/2026-09-bioinformatics/work/public_gse243639/summary/*
+            revision/2026-09-bioinformatics/work/public_gse243639/*comparison.json
+            revision/2026-09-bioinformatics/work/public_gse243639/environment_public_gse243639.json

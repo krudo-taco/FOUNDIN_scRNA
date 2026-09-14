@@ -1,0 +1,7 @@
+data/
+work/
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+*.log

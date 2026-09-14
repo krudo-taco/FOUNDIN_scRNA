@@ -1,0 +1,13 @@
+context,method,genes_tested,p_omnibus,statistic_mean_t2,test,p_holm_new_12,p_holm_including_previous_8
+DA123,rna_qc,43,0.5125,0.7847396906883999,full_panel,1.0,1.0
+DA123,rna_qc,16,0.28515,0.8634559027565806,frozen_direction_profile,1.0,1.0
+DA123_minus_immature4,rna_qc,0,,,full_panel,1.0,1.0
+DA123_minus_immature4,rna_qc,16,,,frozen_direction_profile,1.0,1.0
+DA123_minus_remaining_cells,rna_qc,43,0.7656,0.6392640701702562,full_panel,1.0,1.0
+DA123_minus_remaining_cells,rna_qc,16,0.35145,0.5966383116745346,frozen_direction_profile,1.0,1.0
+DA123,spearman_qc,43,0.2598,1.014403735970342,full_panel,1.0,1.0
+DA123,spearman_qc,16,0.37385,0.5564042172348129,frozen_direction_profile,1.0,1.0
+DA123_minus_immature4,spearman_qc,0,,,full_panel,1.0,1.0
+DA123_minus_immature4,spearman_qc,16,,,frozen_direction_profile,1.0,1.0
+DA123_minus_remaining_cells,spearman_qc,43,0.24275,0.9929500758254595,full_panel,1.0,1.0
+DA123_minus_remaining_cells,spearman_qc,16,0.53885,0.293288719879082,frozen_direction_profile,1.0,1.0

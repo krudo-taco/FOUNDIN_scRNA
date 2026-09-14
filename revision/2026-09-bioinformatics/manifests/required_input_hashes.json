@@ -1,0 +1,110 @@
+{
+  "public_gse243639": [
+    {
+      "path": "05-claim-support/external/GSE243639_Clinical_data.csv.gz",
+      "basename": "GSE243639_Clinical_data.csv.gz",
+      "bytes": 1376,
+      "sha256": "ffea1163eb0c145d452fc08f8d4550986353c29b8b9496f1b69fa208296ebe24"
+    },
+    {
+      "path": "05-claim-support/external/GSE243639_UMAP_coordinates.xlsx",
+      "basename": "GSE243639_UMAP_coordinates.xlsx",
+      "bytes": 7958258,
+      "sha256": "2fcd06645d8b5e4a32ec4462310b5571df5b657ce1e29c651c19b493a63035f4"
+    },
+    {
+      "path": "05-claim-support/external/GSE243639_Filtered_count_table.csv.gz",
+      "basename": "GSE243639_Filtered_count_table.csv.gz",
+      "bytes": 231624817,
+      "sha256": "8a9fd3b08d4357ef2a667b28a9c7c0f658f57782df57f60d2145d4870a6d7f7f"
+    }
+  ],
+  "authorized_foundin_cached": [
+    {
+      "path": "04-reviewer-reanalysis/inputs/rna_panel_logexpr.tsv.gz",
+      "basename": "rna_panel_logexpr.tsv.gz",
+      "bytes": 51856886,
+      "sha256": "46356454ab018c962899be40704145b118eb80e62b0f8a5ccd4dd18f837c0d6c"
+    },
+    {
+      "path": "04-reviewer-reanalysis/inputs/rna_panel_counts.tsv.gz",
+      "basename": "rna_panel_counts.tsv.gz",
+      "bytes": 14243642,
+      "sha256": "c6176c87331f4ab0c5db6bb8789b8bf255ece4759a583bef325f0766c1672921"
+    },
+    {
+      "path": "04-reviewer-reanalysis/inputs/sct_panel_logexpr.tsv.gz",
+      "basename": "sct_panel_logexpr.tsv.gz",
+      "bytes": 19090010,
+      "sha256": "c972bcf8d0207bfb8af6f94579bbf3d1d9b9708b10b927f02fde85b144205ca0"
+    },
+    {
+      "path": "04-reviewer-reanalysis/inputs/cell_metadata_full.tsv.gz",
+      "basename": "cell_metadata_full.tsv.gz",
+      "bytes": 21359981,
+      "sha256": "011984522bcb634377b61548e9e09620031461807f7e6de3efa74b0d836ccea8"
+    }
+  ],
+  "kamath_local_existing": [
+    {
+      "path": "05-claim-support/external/kamath_supplementary_tables.xlsx",
+      "basename": "kamath_supplementary_tables.xlsx",
+      "bytes": 3561273,
+      "sha256": "430d83f7e5da26b3fd961150741ac6a1f512fb9113256c3aa8698cf7677dafaf"
+    },
+    {
+      "path": "05-claim-support/external/kamath_individual_metadata.tar.gz",
+      "basename": "kamath_individual_metadata.tar.gz",
+      "bytes": 15163583,
+      "sha256": "97b7cdd379507e279ba7168dc32ea6d4e78271a820bcf4348dd36bcf2a5fed55"
+    },
+    {
+      "path": "05-claim-support/external/GSE178265_Homo_bcd.tsv.gz",
+      "basename": "GSE178265_Homo_bcd.tsv.gz",
+      "bytes": 2732185,
+      "sha256": "5e8ccf574fb1afcedd9d258b7432b1c2f4e88c8747406f901d70f0121623751c"
+    },
+    {
+      "path": "05-claim-support/external/GSE178265_Homo_features.tsv.gz",
+      "basename": "GSE178265_Homo_features.tsv.gz",
+      "bytes": 295300,
+      "sha256": "fa2b4e9cc742ef81747ccd9c348b5dc55095525f790e329168ff4f1daff8cbf9"
+    },
+    {
+      "path": "05-claim-support/external/GSE178265_Homo_matrix.mtx.gz",
+      "basename": "GSE178265_Homo_matrix.mtx.gz",
+      "bytes": 5089750754,
+      "sha256": "d39c5da8b7746e7c9e83db0f29a66e5d60a4e8131274f200e1ef4e9d9302aa9f"
+    },
+    {
+      "path": "05-claim-support/external/individualobject_seuratmetadataframe.qs",
+      "basename": "individualobject_seuratmetadataframe.qs",
+      "bytes": 15298975,
+      "sha256": "c4a7ece6a277574c93109c28f20a60a59573e4589fd9058cc590e4a56041d16f"
+    },
+    {
+      "path": "05-claim-support/inputs/kamath_panel_counts.npz",
+      "basename": "kamath_panel_counts.npz",
+      "bytes": 14745636,
+      "sha256": "11947fdc9142122fd5fbc8aa315756f577b4081eb8be27614c2fe081aa0c7501"
+    },
+    {
+      "path": "05-claim-support/inputs/kamath_cell_qc.csv.gz",
+      "basename": "kamath_cell_qc.csv.gz",
+      "bytes": 9685369,
+      "sha256": "a3e5c1358b686a552fb8b9cd0ff5538049586084a0bc9c530aa81769cbaa4893"
+    },
+    {
+      "path": "05-claim-support/inputs/kamath_cell_annotation_mapping.csv.gz",
+      "basename": "kamath_cell_annotation_mapping.csv.gz",
+      "bytes": 15018467,
+      "sha256": "87155823ce06b4e8562336e3d7de1b776f5ce759a08f76db85796a44199782d8"
+    },
+    {
+      "path": "05-claim-support/inputs/kamath_author_metadata.csv.gz",
+      "basename": "kamath_author_metadata.csv.gz",
+      "bytes": 21107930,
+      "sha256": "ba7bba5253c709a8ebef6451905c6bcfea5bb253723123ff87ad19d04351c5ce"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "python": "3.8.10 (default, Mar 15 2022, 12:22:08) \n[GCC 9.4.0]",
+  "platform": "Linux-5.13.0-48-generic-x86_64-with-glibc2.29",
+  "numpy": "1.24.4",
+  "scipy": "1.6.0",
+  "pandas": "2.0.3",
+  "statsmodels": "0.14.1",
+  "h5py": "3.10.0",
+  "matplotlib": "3.1.2",
+  "docx": "1.1.2",
+  "libreoffice": "LibreOffice 6.4.7.2 40(Build:2)",
+  "R_session_record": "results/R_session_info.txt"
+}

@@ -1,0 +1,8 @@
+qs==0.27.3
+stringfish==0.16.0
+RApiSerialize==0.1.4
+RcppParallel==6.2.1
+data.table
+Matrix
+Seurat
+limma

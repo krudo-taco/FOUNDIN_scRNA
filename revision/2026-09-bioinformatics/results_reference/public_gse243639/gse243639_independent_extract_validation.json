@@ -1,0 +1,11 @@
+{
+  "matrix_rows": 33537,
+  "genes_with_nonzero_counts": 30194,
+  "independently_verified_genes": [
+    "SNCA",
+    "TH",
+    "SPG11"
+  ],
+  "all_83484_cells_matched_for_each_verified_gene": true,
+  "elapsed_seconds": 13.96
+}

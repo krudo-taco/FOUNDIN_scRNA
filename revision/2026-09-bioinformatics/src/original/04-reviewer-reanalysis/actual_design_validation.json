@@ -1,0 +1,31 @@
+{
+  "seed": 20260913,
+  "wild_draws": 1999,
+  "actual_design_columns": [
+    "intercept",
+    "female",
+    "batch_fraction_2",
+    "batch_fraction_3",
+    "batch_fraction_4",
+    "batch_fraction_5",
+    "iPD"
+  ],
+  "actual_design_donors": 36,
+  "actual_design_null_calibrations": {
+    "Gaussian_equal_variance": {
+      "null_tests": 500,
+      "rejection_rate_alpha05": 0.048
+    },
+    "Gaussian_HC_twice_SD": {
+      "null_tests": 500,
+      "rejection_rate_alpha05": 0.048
+    },
+    "heavy_tailed_df4": {
+      "null_tests": 500,
+      "rejection_rate_alpha05": 0.038
+    }
+  },
+  "primary_edges": 86,
+  "primary_BH_matches_statsmodels": true,
+  "limitation": "Bounded simulation checks, not a proof of universal finite-sample validity."
+}

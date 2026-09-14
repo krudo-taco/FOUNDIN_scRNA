@@ -1,0 +1,10 @@
+{
+  "hc3_matches_statsmodels_max_se_error": 1.1102230246251565e-16,
+  "bh_reference": "PASS",
+  "bootstrap_average_ranks_match_scipy_with_ties": "PASS",
+  "correlation_matches_numpy": "PASS",
+  "strong_signal_p": 0.0005,
+  "null_tests": 300,
+  "null_rejection_rate_alpha_05": 0.03,
+  "null_note": "One Gaussian design calibration only; does not establish universal finite-sample validity."
+}

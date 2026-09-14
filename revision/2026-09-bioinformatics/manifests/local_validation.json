@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "python": "3.8.10 (default, Mar 15 2022, 12:22:08) \n[GCC 9.4.0]",
+  "platform": "Linux-5.13.0-48-generic-x86_64-with-glibc2.29",
+  "python_package_versions": {
+    "numpy": "1.24.4",
+    "pandas": "2.0.3",
+    "scipy": "1.6.0",
+    "statsmodels": "0.14.1",
+    "h5py": "3.10.0"
+  },
+  "rscript_version": "Rscript (R) version 4.2.2 Patched (2022-11-10 r83330)",
+  "r_package_versions": {
+    "qs": "0.27.3",
+    "stringfish": "0.16.0",
+    "RApiSerialize": "0.1.4",
+    "RcppParallel": "6.2.1",
+    "data.table": "1.17.8",
+    "Matrix": "1.5.1",
+    "Seurat": "4.3.0.1",
+    "limma": "3.54.2"
+  },
+  "pypi_metadata_verification": "PASS; manifests/pypi_dependency_metadata.json confirms cp38 Linux wheels for pinned Python dependencies",
+  "baseline_validators": {
+    "04_check_statistics": "PASS",
+    "04_check_actual_design": "PASS",
+    "05_verify_results": "PASS",
+    "05_verify_kamath_results": "PASS"
+  },
+  "package_validators": {
+    "tests/test_synthetic_kernels.py": "PASS",
+    "tests/test_staging_helpers.py": "PASS",
+    "tools/verify_package.py": "PASS after manifest regeneration",
+    "run_public_gse243639.py --external-root ../05-claim-support/external --skip-download": "PASS with input hash checks",
+    "gse243639_edges264_comparison": "PASS, 264 rows, max numeric diff 0",
+    "gse243639_panel16_comparison": "PASS, 16 rows, max numeric diff 0",
+    "run_authorized_foundin.py --config config/authorized_foundin_cached.json": "PASS cached-input rerun",
+    "foundin_primary86_comparison": "PASS, 86 rows, max numeric diff <= 4.44e-16",
+    "run_manual_kamath_heavy.py --config config/kamath_local_existing.json": "PASS local-existing processed-input rerun",
+    "kamath_edges1008_comparison": "PASS, 1008 rows, max numeric diff 0",
+    "kamath_panel48_comparison": "PASS, 48 rows, max numeric diff 0"
+  },
+  "excluded_from_public_commit_by_gitignore": [
+    "data/",
+    "work/",
+    "__pycache__/",
+    "*.pyc",
+    "*.log"
+  ],
+  "legacy_path_note": "src/original preserves provenance scripts and may contain historical local path strings; portable runners patch staged copies under work/ only.",
+  "verification_level_note": "Local public GSE rerun used existing downloaded GEO raw files as external_root; CI push job can download them on a fresh runner. Kamath local-existing mode validates processed public inputs and does not re-stream the 5GB matrix.",
+  "publication_audit_status": "Files frozen for parent publication audit after this manifest regeneration."
+}
