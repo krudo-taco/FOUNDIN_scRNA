@@ -1,0 +1,43 @@
+{
+  "Figure2": {
+    "title": "Donor-level SNCA-autophagy coupling estimates do not establish reproducible disease-specific rewiring",
+    "panel_map": {
+      "a": "All 43 eligible SNCA-autophagy gene correlations in the strict primary FOUNDIN pooled iDA1-4 donor analysis.",
+      "b": "All 43 direct specificity coefficients from the same strict primary donor set; the coefficient is computed on the pooled iDA1-4 minus other-cells donor contrast.",
+      "c": "Donor coverage for the primary and support analyses, using HC/iPD for FOUNDIN and HC/PD for Kamath.",
+      "d": "Frozen 16-gene fixed-direction profile estimates for the FOUNDIN DA123 sensitivity and independent Kamath primary DA analyses."
+    },
+    "caption": "Figure 2 | Donor-level SNCA-autophagy coupling estimates do not establish reproducible disease-specific rewiring. a, Disease coefficients for all 43 eligible SNCA-autophagy genes in the strict primary FOUNDIN pooled iDA1-4 context (n=8 HC and n=28 iPD donors). The model was intercept + female + batch-fraction covariates + iPD, fitted to donor-level within-culture SNCA-gene Fisher z values. Points show adjusted iPD-minus-HC coefficients and horizontal bars show pointwise HC3 95% confidence intervals. b, Direct specificity coefficients for the same 43 genes (n=8 HC and n=28 iPD donors), defined as the disease effect on the donor-level pooled iDA1-4 minus other-cells Fisher z contrast. These coefficients are not raw differences between pooled-cell correlations. Raw P values are wild-bootstrap P values; q values are Benjamini-Hochberg adjusted jointly across the 86 primary tests. c, Donor coverage for the displayed analyses (FOUNDIN pooled iDA1-4 primary: 8 HC/28 iPD donors; FOUNDIN DA123 sensitivity: 8 HC/28 iPD donors; Kamath primary DA: 8 HC/5 PD donors); panel c uses HC/iPD for FOUNDIN analyses and HC/PD for the Kamath analysis. d, Frozen 16-gene fixed-direction profile tests for FOUNDIN DA123 (n=8 HC and n=28 iPD donors; 16 genes; raw wild-bootstrap P=0.285, Holm-adjusted P=1.000 across the 12 FOUNDIN regrouped tests) and Kamath primary DA (n=8 HC and n=5 PD donors; age-, sex- and brain-bank-adjusted model; 16 genes summarized as the same frozen profile; raw wild-bootstrap P=0.819, Holm-adjusted P=1.000 across the 4 primary RNA Kamath tests).",
+    "statistics": {
+      "effect_unit": "donor-level Fisher z coefficient",
+      "error_bars": "pointwise HC3 95% confidence intervals",
+      "primary_multiplicity": "Benjamini-Hochberg adjustment across 86 primary tests",
+      "raw_p_values": "wild-bootstrap P values",
+      "direct_specificity_definition": "disease effect on target-minus-comparison donor contrasts, not raw delta-r"
+    },
+    "source_data": [
+      "figures/source_data/Figure2_AB_primary_86_estimates.csv",
+      "figures/source_data/Figure2_C_donor_cell_coverage_source.csv",
+      "figures/source_data/Figure2_D_fixed_direction_profile_source.csv"
+    ]
+  },
+  "SupplementaryFigure2": {
+    "title": "Pseudobulk differential-expression screens across primary contexts",
+    "panel_map": {
+      "all_panels": "Twelve small-multiple volcano plots for pooled iDA1-4 and 11 primary annotated cell-type contexts."
+    },
+    "caption": "Supplementary Figure 2 | Pseudobulk differential-expression screens across primary contexts. Volcano plots show the existing sex- and batch-adjusted limma-voom primary pseudobulk differential-expression results for pooled iDA1-4 and 11 annotated cell-type contexts. Pseudobulk samples were aggregated at the culture/context level using the >=20 cells per culture/context gate; Table 2 reports the exact donor n for each context. Each point is one tested gene. The x axis shows log2 fold-change for iPD versus HC and the y axis shows -log10 raw P. Axis limits are set from the full finite data range, so points are not percentile-clipped. Context-level Benjamini-Hochberg FDR was used for DEG calls. Summary by panel: Pooled iDA1-4: 19192 genes, 0 FDR<0.05; iDA1: 19221 genes, 0 FDR<0.05; iDA2: 20112 genes, 0 FDR<0.05; iDA3: 18167 genes, 0 FDR<0.05; iDA4: 18634 genes, 0 FDR<0.05; eProg1: 18109 genes, 0 FDR<0.05; eProg2: 19001 genes, 0 FDR<0.05; lProg1: 19350 genes, 0 FDR<0.05; lProg2: 18475 genes, 0 FDR<0.05; PFPP: 19395 genes, 0 FDR<0.05; NE: 19793 genes, 0 FDR<0.05; Ependymal: 20855 genes, 0 FDR<0.05.",
+    "statistics": {
+      "model": "sex- and batch-adjusted limma-voom pseudobulk differential-expression primary models",
+      "aggregation": "culture/context pseudobulk aggregation with >=20 cells per culture/context; exact donor n in Table 2",
+      "x_axis": "log2 fold-change, iPD versus HC",
+      "y_axis": "-log10 raw P",
+      "multiplicity": "context-level Benjamini-Hochberg FDR for DEG calls",
+      "axis_policy": "full finite data range with padding; no unreported percentile clipping"
+    },
+    "source_data": [
+      "figures/source_data/Supplementary_Figure2_all_primary_pseudobulk_volcano_source.csv.gz",
+      "figures/source_data/Supplementary_Figure2_context_summary.csv"
+    ]
+  }
+}

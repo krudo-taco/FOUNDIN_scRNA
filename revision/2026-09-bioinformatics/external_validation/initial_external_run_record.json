@@ -1,0 +1,21 @@
+{
+  "external_run_id": 34812299191,
+  "external_run_url": "https://github.com/krudo-taco/FOUNDIN_scRNA/actions/runs/34812299191",
+  "external_commit_sha": "dc268fed9c7b0029532ace423c9527d0cb7be629",
+  "external_scope": [
+    "Synthetic numerical and staging-helper tests",
+    "Package SHA256 manifest and frozen-plan integrity",
+    "Public GSE243639 raw-data download, input SHA256 checks, complete pilot rerun, 264 edge and16 panel/profile numeric comparisons",
+    "Summary CSV and SVG regeneration"
+  ],
+  "limitations": [
+    "FOUNDIN verified-cached rerun and Kamath processed-input rerun verified locally, not on external runner",
+    "External runner does not perform full controlled FOUNDIN raw reload or full Kamath matrix re-extraction"
+  ],
+  "status": "PASS",
+  "artifact_metadata": {
+    "id": 10334709983,
+    "sha256": "d66461b4cd14d1fb5538ee34246b99312306fa013b94dac28a4dfc3cdbde82c9",
+    "local_zip_download": "connector temporary file URL returned403; verification uses actual downloaded job logs, preserved here"
+  }
+}

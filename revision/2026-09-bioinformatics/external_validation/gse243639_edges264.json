@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "profile": "gse243639_edges264",
+  "rows": 264,
+  "tolerance": 1e-12,
+  "checks": [
+    {
+      "column": "effect_z",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "ci_low",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "ci_high",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "se_hc3",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "t_hc3",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "p_wild",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "p_hc3_t",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "q_joint_pilot_family",
+      "match": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "_provenance": {
+    "source": "GitHub Actions job log",
+    "run_id": 34812299191,
+    "commit_sha": "dc268fed9c7b0029532ace423c9527d0cb7be629",
+    "job": "public-gse243639",
+    "log_sha256": "126ae7361d1d4208ae8fffd95847052c01819a914c760a7b3c8e327eeb5b571c"
+  }
+}

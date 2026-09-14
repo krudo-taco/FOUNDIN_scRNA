@@ -153,3 +153,9 @@ those analyses requires authorized local access. The Kamath qs annotation was
 used from a public access route during local analysis, but redistribution and
 license status should be confirmed before bundling that file in any public
 repository.
+
+## Revised manuscript displays and external evidence
+
+`manuscript_visuals/` rebuilds the revised Figure 2 and Table 4 from bundled aggregate inputs. Install its optional display dependencies in addition to the main requirements, then run the builder and validator from that directory. Its reference table is bundled; it does not require the authors’ workspace. Complete DE/pathway source tables accompany the manuscript supplement.
+
+`external_validation/` preserves actual external-run logs, environment information and numerical comparisons. The record identifies the exact tested commit and distinguishes public raw-input validation from the local authorized or processed-input checks.

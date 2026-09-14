@@ -1,0 +1,28 @@
+{
+  "python": "3.8.18 (default, Dec 12 2024, 19:15:02) \n[GCC 11.4.0]",
+  "platform": "Linux-6.8.0-1064-azure-x86_64-with-glibc2.34",
+  "executable": "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "python_packages": {
+    "numpy": "1.24.4",
+    "pandas": "2.0.3",
+    "scipy": "1.6.0",
+    "statsmodels": "0.14.1",
+    "h5py": "3.10.0"
+  },
+  "rscript_version": "Rscript (R) version 4.6.1 (2026-06-24)",
+  "r_packages": {
+    "status": "unavailable"
+  },
+  "_provenance": {
+    "source": "GitHub Actions job log",
+    "run_id": 34812299191,
+    "commit_sha": "dc268fed9c7b0029532ace423c9527d0cb7be629",
+    "job": "synthetic",
+    "log_sha256": "79a0692831af4f800bd81f1e58adb458ca769fb1cfa65c3e715014c55424e084"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "required_files": 14,
+  "data_access_routes": [
+    "derived aggregate",
+    "private",
+    "restricted",
+    "reused public source",
+    "reused public source/licensing uncertain"
+  ],
+  "copied_05_analysis_plan_sha256": "67d160b8e20306b8c983eeb82e0bfaf78ac5a43e32959345c077618d44e5ebdf",
+  "kamath_frozen_plan_recorded_sha256": "67d160b8e20306b8c983eeb82e0bfaf78ac5a43e32959345c077618d44e5ebdf",
+  "manifest_files_checked": 80,
+  "verification_level": "static package integrity; not a full biological rerun",
+  "_provenance": {
+    "source": "GitHub Actions job log",
+    "run_id": 34812299191,
+    "commit_sha": "dc268fed9c7b0029532ace423c9527d0cb7be629",
+    "job": "synthetic",
+    "log_sha256": "79a0692831af4f800bd81f1e58adb458ca769fb1cfa65c3e715014c55424e084"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "profile": "gse243639_panel16",
+  "rows": 16,
+  "tolerance": 1e-12,
+  "checks": [
+    {
+      "column": "genes_tested",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "statistic_mean_t2",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "p_omnibus",
+      "match": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "column": "p_holm_all_pilot_tests",
+      "match": true,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "_provenance": {
+    "source": "GitHub Actions job log",
+    "run_id": 34812299191,
+    "commit_sha": "dc268fed9c7b0029532ace423c9527d0cb7be629",
+    "job": "public-gse243639",
+    "log_sha256": "126ae7361d1d4208ae8fffd95847052c01819a914c760a7b3c8e327eeb5b571c"
+  }
+}

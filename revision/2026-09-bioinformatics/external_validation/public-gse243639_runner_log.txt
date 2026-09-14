@@ -1,0 +1,483 @@
+﻿2026-09-14T06:10:04.1495424Z Current runner version: '2.337.0'
+2026-09-14T06:10:04.1522938Z ##[group]Runner Image Provisioner
+2026-09-14T06:10:04.1523890Z Hosted Compute Agent
+2026-09-14T06:10:04.1524612Z Version: 20260828.587
+2026-09-14T06:10:04.1525299Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-14T06:10:04.1526041Z Build Date: 2026-08-28T16:44:25Z
+2026-09-14T06:10:04.1526837Z Worker ID: {5f7202fc-214a-40b9-84c0-2d2c9d38ab66}
+2026-09-14T06:10:04.1527565Z Azure Region: westus3
+2026-09-14T06:10:04.1528586Z ##[endgroup]
+2026-09-14T06:10:04.1530475Z ##[group]Operating System
+2026-09-14T06:10:04.1531179Z Ubuntu
+2026-09-14T06:10:04.1531801Z 22.04.5
+2026-09-14T06:10:04.1532408Z LTS
+2026-09-14T06:10:04.1532953Z ##[endgroup]
+2026-09-14T06:10:04.1533613Z ##[group]Runner Image
+2026-09-14T06:10:04.1534255Z Image: ubuntu-22.04
+2026-09-14T06:10:04.1534872Z Version: 20260907.292.1
+2026-09-14T06:10:04.1536227Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260907.292/images/ubuntu/Ubuntu2204-Readme.md
+2026-09-14T06:10:04.1538620Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260907.292
+2026-09-14T06:10:04.1539713Z ##[endgroup]
+2026-09-14T06:10:04.1540946Z ##[group]GITHUB_TOKEN Permissions
+2026-09-14T06:10:04.1543311Z Contents: read
+2026-09-14T06:10:04.1544039Z Metadata: read
+2026-09-14T06:10:04.1544650Z ##[endgroup]
+2026-09-14T06:10:04.1546852Z Secret source: Actions
+2026-09-14T06:10:04.1548266Z Cache mode: write
+2026-09-14T06:10:04.1549291Z Prepare workflow directory
+2026-09-14T06:10:04.2054873Z Prepare all required actions
+2026-09-14T06:10:04.2105178Z Getting action download info
+2026-09-14T06:10:04.5151559Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-14T06:10:04.6047638Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-09-14T06:10:04.6947461Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-09-14T06:10:04.9222319Z Complete job name: public-gse243639
+2026-09-14T06:10:05.0071245Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-14T06:10:05.0080510Z ##[group]Run actions/checkout@v4
+2026-09-14T06:10:05.0081257Z with:
+2026-09-14T06:10:05.0081710Z   repository: krudo-taco/FOUNDIN_scRNA
+2026-09-14T06:10:05.0085500Z   token: ***
+2026-09-14T06:10:05.0085928Z   ssh-strict: true
+2026-09-14T06:10:05.0086362Z   ssh-user: git
+2026-09-14T06:10:05.0086802Z   persist-credentials: true
+2026-09-14T06:10:05.0087277Z   clean: true
+2026-09-14T06:10:05.0087708Z   sparse-checkout-cone-mode: true
+2026-09-14T06:10:05.0088451Z   fetch-depth: 1
+2026-09-14T06:10:05.0088868Z   fetch-tags: false
+2026-09-14T06:10:05.0089296Z   show-progress: true
+2026-09-14T06:10:05.0089761Z   lfs: false
+2026-09-14T06:10:05.0090263Z   submodules: false
+2026-09-14T06:10:05.0090766Z   set-safe-directory: true
+2026-09-14T06:10:05.0091322Z   allow-unsafe-pr-checkout: false
+2026-09-14T06:10:05.0092154Z env:
+2026-09-14T06:10:05.0092634Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:10:05.0093222Z   OMP_NUM_THREADS: 1
+2026-09-14T06:10:05.0093718Z   MKL_NUM_THREADS: 1
+2026-09-14T06:10:05.0094150Z ##[endgroup]
+2026-09-14T06:10:05.1253024Z Syncing repository: krudo-taco/FOUNDIN_scRNA
+2026-09-14T06:10:05.1255688Z ##[group]Getting Git version info
+2026-09-14T06:10:05.1256905Z Working directory is '/home/runner/work/FOUNDIN_scRNA/FOUNDIN_scRNA'
+2026-09-14T06:10:05.1259079Z [command]/usr/bin/git version
+2026-09-14T06:10:05.1385116Z git version 2.55.0
+2026-09-14T06:10:05.1408895Z ##[endgroup]
+2026-09-14T06:10:05.1425168Z Temporarily overriding HOME='/home/runner/work/_temp/3ccb4081-3a39-4bcc-834a-cc9dafb3fc58' before making global git config changes
+2026-09-14T06:10:05.1427729Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-14T06:10:05.1430801Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/FOUNDIN_scRNA/FOUNDIN_scRNA
+2026-09-14T06:10:05.1483345Z Deleting the contents of '/home/runner/work/FOUNDIN_scRNA/FOUNDIN_scRNA'
+2026-09-14T06:10:05.1489039Z ##[group]Initializing the repository
+2026-09-14T06:10:05.1494058Z [command]/usr/bin/git init /home/runner/work/FOUNDIN_scRNA/FOUNDIN_scRNA
+2026-09-14T06:10:05.1620911Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-14T06:10:05.1623106Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-14T06:10:05.1625360Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-14T06:10:05.1626522Z hint: call:
+2026-09-14T06:10:05.1627138Z hint:
+2026-09-14T06:10:05.1628245Z hint: 	git config --global init.defaultBranch <name>
+2026-09-14T06:10:05.1629575Z hint:
+2026-09-14T06:10:05.1630684Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-14T06:10:05.1632023Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-14T06:10:05.1633091Z hint:
+2026-09-14T06:10:05.1633619Z hint: 	git branch -m <name>
+2026-09-14T06:10:05.1634088Z hint:
+2026-09-14T06:10:05.1634707Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-14T06:10:05.1636029Z Initialized empty Git repository in /home/runner/work/FOUNDIN_scRNA/FOUNDIN_scRNA/.git/
+2026-09-14T06:10:05.1638516Z [command]/usr/bin/git remote add origin https://github.com/krudo-taco/FOUNDIN_scRNA
+2026-09-14T06:10:05.1680692Z ##[endgroup]
+2026-09-14T06:10:05.1681802Z ##[group]Disabling automatic garbage collection
+2026-09-14T06:10:05.1684744Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-14T06:10:05.1723409Z ##[endgroup]
+2026-09-14T06:10:05.1724144Z ##[group]Setting up auth
+2026-09-14T06:10:05.1732974Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-14T06:10:05.1774699Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-14T06:10:05.2272505Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-14T06:10:05.2334220Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-14T06:10:05.2644081Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-14T06:10:05.2687333Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-14T06:10:05.2962829Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-14T06:10:05.3008422Z ##[endgroup]
+2026-09-14T06:10:05.3009610Z ##[group]Fetching the repository
+2026-09-14T06:10:05.3018937Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +dc268fed9c7b0029532ace423c9527d0cb7be629:refs/remotes/origin/revision/bioinformatics-2026-09-14
+2026-09-14T06:10:06.0420688Z From https://github.com/krudo-taco/FOUNDIN_scRNA
+2026-09-14T06:10:06.0422112Z  * [new ref]         dc268fed9c7b0029532ace423c9527d0cb7be629 -> origin/revision/bioinformatics-2026-09-14
+2026-09-14T06:10:06.0435805Z ##[endgroup]
+2026-09-14T06:10:06.0437448Z ##[group]Determining the checkout info
+2026-09-14T06:10:06.0439577Z ##[endgroup]
+2026-09-14T06:10:06.0444583Z [command]/usr/bin/git sparse-checkout disable
+2026-09-14T06:10:06.0504335Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-14T06:10:06.0544953Z ##[group]Checking out the ref
+2026-09-14T06:10:06.0551234Z [command]/usr/bin/git checkout --progress --force -B revision/bioinformatics-2026-09-14 refs/remotes/origin/revision/bioinformatics-2026-09-14
+2026-09-14T06:10:06.0715306Z Switched to a new branch 'revision/bioinformatics-2026-09-14'
+2026-09-14T06:10:06.0719118Z branch 'revision/bioinformatics-2026-09-14' set up to track 'origin/revision/bioinformatics-2026-09-14'.
+2026-09-14T06:10:06.0731772Z ##[endgroup]
+2026-09-14T06:10:06.0775437Z [command]/usr/bin/git log -1 --format=%H
+2026-09-14T06:10:06.0808047Z dc268fed9c7b0029532ace423c9527d0cb7be629
+2026-09-14T06:10:06.1270281Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-14T06:10:06.1277108Z ##[group]Run actions/setup-python@v5
+2026-09-14T06:10:06.1278808Z with:
+2026-09-14T06:10:06.1279676Z   python-version: 3.8
+2026-09-14T06:10:06.1280656Z   check-latest: false
+2026-09-14T06:10:06.1291040Z   token: ***
+2026-09-14T06:10:06.1291979Z   update-environment: true
+2026-09-14T06:10:06.1293049Z   allow-prereleases: false
+2026-09-14T06:10:06.1294094Z   freethreaded: false
+2026-09-14T06:10:06.1295026Z env:
+2026-09-14T06:10:06.1295851Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:10:06.1296872Z   OMP_NUM_THREADS: 1
+2026-09-14T06:10:06.1297911Z   MKL_NUM_THREADS: 1
+2026-09-14T06:10:06.1298812Z ##[endgroup]
+2026-09-14T06:10:06.2823249Z ##[group]Installed versions
+2026-09-14T06:10:06.2915458Z Version 3.8 was not found in the local cache
+2026-09-14T06:10:06.3054262Z (node:2042) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-14T06:10:06.3058407Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-14T06:10:07.4370771Z Version 3.8 is available for downloading
+2026-09-14T06:10:07.4372983Z Download from "https://github.com/actions/python-versions/releases/download/3.8.18-12303122501/python-3.8.18-linux-22.04-x64.tar.gz"
+2026-09-14T06:10:08.1049672Z Extract downloaded archive
+2026-09-14T06:10:08.1196196Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/ddc956a1-f192-422b-826b-5349377639c3 -f /home/runner/work/_temp/32e5c1c0-6b95-4f81-a329-df7e3e04c483
+2026-09-14T06:10:09.4333426Z Execute installation script
+2026-09-14T06:10:09.4445066Z Check if Python hostedtoolcache folder exist...
+2026-09-14T06:10:09.4446317Z Create Python 3.8.18 folder
+2026-09-14T06:10:09.4461766Z Copy Python binaries to hostedtoolcache folder
+2026-09-14T06:10:09.9690254Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+2026-09-14T06:10:09.9743120Z Upgrading pip...
+2026-09-14T06:10:11.8688653Z Looking in links: /tmp/tmph154de1k
+2026-09-14T06:10:11.8693402Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (56.0.0)
+2026-09-14T06:10:11.8698720Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (23.0.1)
+2026-09-14T06:10:13.0305032Z Collecting pip
+2026-09-14T06:10:13.0714668Z Downloading pip-25.0.1-py3-none-any.whl (1.8 MB)
+2026-09-14T06:10:13.1191837Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 42.0 MB/s eta 0:00:00
+2026-09-14T06:10:13.1192943Z 
+2026-09-14T06:10:13.1549772Z Installing collected packages: pip
+2026-09-14T06:10:13.1550767Z Attempting uninstall: pip
+2026-09-14T06:10:13.1558820Z Found existing installation: pip 23.0.1
+2026-09-14T06:10:13.3518310Z Uninstalling pip-23.0.1:
+2026-09-14T06:10:13.3602007Z Successfully uninstalled pip-23.0.1
+2026-09-14T06:10:14.1085959Z Successfully installed pip-25.0.1
+2026-09-14T06:10:14.1762330Z Create complete file
+2026-09-14T06:10:14.1810999Z Successfully set up CPython (3.8.18)
+2026-09-14T06:10:14.1812508Z ##[endgroup]
+2026-09-14T06:10:14.1993092Z ##[group]Run python -m pip install --upgrade pip
+2026-09-14T06:10:14.1993553Z [36;1mpython -m pip install --upgrade pip[0m
+2026-09-14T06:10:14.2349711Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-14T06:10:14.2350140Z env:
+2026-09-14T06:10:14.2350373Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:10:14.2350645Z   OMP_NUM_THREADS: 1
+2026-09-14T06:10:14.2350856Z   MKL_NUM_THREADS: 1
+2026-09-14T06:10:14.2351135Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.2351569Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:10:14.2352001Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.2352405Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.2352797Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.2353190Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:10:14.2353530Z ##[endgroup]
+2026-09-14T06:10:14.6522027Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages (25.0.1)
+2026-09-14T06:10:14.8203033Z ##[group]Run python -m pip install -r requirements.txt
+2026-09-14T06:10:14.8203487Z [36;1mpython -m pip install -r requirements.txt[0m
+2026-09-14T06:10:14.8279606Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-14T06:10:14.8279965Z env:
+2026-09-14T06:10:14.8280169Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:10:14.8280408Z   OMP_NUM_THREADS: 1
+2026-09-14T06:10:14.8280622Z   MKL_NUM_THREADS: 1
+2026-09-14T06:10:14.8280898Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.8281337Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:10:14.8281772Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.8282162Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.8282542Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:14.8282934Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:10:14.8283311Z ##[endgroup]
+2026-09-14T06:10:15.4954466Z Collecting numpy==1.24.4 (from -r requirements.txt (line 1))
+2026-09-14T06:10:15.5279106Z   Downloading numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+2026-09-14T06:10:15.6642471Z Collecting pandas==2.0.3 (from -r requirements.txt (line 2))
+2026-09-14T06:10:15.6765262Z   Downloading pandas-2.0.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+2026-09-14T06:10:15.8662260Z Collecting scipy==1.6.0 (from -r requirements.txt (line 3))
+2026-09-14T06:10:15.8784443Z   Downloading scipy-1.6.0-cp38-cp38-manylinux1_x86_64.whl.metadata (2.0 kB)
+2026-09-14T06:10:15.9317657Z Collecting statsmodels==0.14.1 (from -r requirements.txt (line 4))
+2026-09-14T06:10:15.9450965Z   Downloading statsmodels-0.14.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+2026-09-14T06:10:16.0018943Z Collecting h5py==3.10.0 (from -r requirements.txt (line 5))
+2026-09-14T06:10:16.0150039Z   Downloading h5py-3.10.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+2026-09-14T06:10:16.0329002Z Collecting python-dateutil>=2.8.2 (from pandas==2.0.3->-r requirements.txt (line 2))
+2026-09-14T06:10:16.0442965Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2026-09-14T06:10:16.0931519Z Collecting pytz>=2020.1 (from pandas==2.0.3->-r requirements.txt (line 2))
+2026-09-14T06:10:16.1043861Z   Downloading pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+2026-09-14T06:10:16.1262789Z Collecting tzdata>=2022.1 (from pandas==2.0.3->-r requirements.txt (line 2))
+2026-09-14T06:10:16.1373095Z   Downloading tzdata-2026.4-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-09-14T06:10:16.1871684Z Collecting patsy>=0.5.4 (from statsmodels==0.14.1->-r requirements.txt (line 4))
+2026-09-14T06:10:16.1983280Z   Downloading patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+2026-09-14T06:10:16.2206350Z Collecting packaging>=21.3 (from statsmodels==0.14.1->-r requirements.txt (line 4))
+2026-09-14T06:10:16.2319196Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+2026-09-14T06:10:16.2748040Z Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.0.3->-r requirements.txt (line 2))
+2026-09-14T06:10:16.2860949Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-09-14T06:10:16.3039937Z Downloading numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+2026-09-14T06:10:16.4203510Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 176.6 MB/s eta 0:00:00
+2026-09-14T06:10:16.4333600Z Downloading pandas-2.0.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+2026-09-14T06:10:16.4920319Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 219.5 MB/s eta 0:00:00
+2026-09-14T06:10:16.5040897Z Downloading scipy-1.6.0-cp38-cp38-manylinux1_x86_64.whl (27.2 MB)
+2026-09-14T06:10:17.0123640Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.2/27.2 MB 53.5 MB/s eta 0:00:00
+2026-09-14T06:10:17.0238793Z Downloading statsmodels-0.14.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.9 MB)
+2026-09-14T06:10:17.0735874Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 229.5 MB/s eta 0:00:00
+2026-09-14T06:10:17.0852011Z Downloading h5py-3.10.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.8 MB)
+2026-09-14T06:10:17.1139477Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 179.0 MB/s eta 0:00:00
+2026-09-14T06:10:17.1250408Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+2026-09-14T06:10:17.1387536Z Downloading patsy-1.0.3-py2.py3-none-any.whl (233 kB)
+2026-09-14T06:10:17.1530000Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-09-14T06:10:17.1674566Z Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+2026-09-14T06:10:17.1832305Z Downloading tzdata-2026.4-py2.py3-none-any.whl (347 kB)
+2026-09-14T06:10:17.1983100Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-09-14T06:10:17.3952412Z Installing collected packages: pytz, tzdata, six, packaging, numpy, scipy, python-dateutil, patsy, h5py, pandas, statsmodels
+2026-09-14T06:10:26.7403183Z Successfully installed h5py-3.10.0 numpy-1.24.4 packaging-26.2 pandas-2.0.3 patsy-1.0.3 python-dateutil-2.9.0.post0 pytz-2026.3.post1 scipy-1.6.0 six-1.17.0 statsmodels-0.14.1 tzdata-2026.4
+2026-09-14T06:10:26.8256141Z ##[group]Run python run_public_gse243639.py --config config/public_gse243639.json
+2026-09-14T06:10:26.8256743Z [36;1mpython run_public_gse243639.py --config config/public_gse243639.json[0m
+2026-09-14T06:10:26.8329967Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-14T06:10:26.8330312Z env:
+2026-09-14T06:10:26.8330507Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:10:26.8330735Z   OMP_NUM_THREADS: 1
+2026-09-14T06:10:26.8330934Z   MKL_NUM_THREADS: 1
+2026-09-14T06:10:26.8331200Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:26.8331622Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:10:26.8332048Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:26.8332429Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:26.8332793Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:10:26.8333202Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:10:26.8333516Z ##[endgroup]
+2026-09-14T06:10:27.3801952Z Downloading GSE243639_Clinical_data.csv.gz
+2026-09-14T06:10:27.7575815Z Downloading GSE243639_UMAP_coordinates.xlsx
+2026-09-14T06:10:28.5162135Z Downloading GSE243639_Filtered_count_table.csv.gz
+2026-09-14T06:10:57.3523671Z Processed genes 3000; elapsed 18.6s
+2026-09-14T06:11:15.8434706Z Processed genes 6000; elapsed 37.1s
+2026-09-14T06:11:34.2483941Z Processed genes 9000; elapsed 55.5s
+2026-09-14T06:11:52.7150660Z Processed genes 12000; elapsed 74.0s
+2026-09-14T06:12:11.1671317Z Processed genes 15000; elapsed 92.4s
+2026-09-14T06:12:29.6506351Z Processed genes 18000; elapsed 110.9s
+2026-09-14T06:12:48.0598352Z Processed genes 21000; elapsed 129.3s
+2026-09-14T06:13:06.5683407Z Processed genes 24000; elapsed 147.8s
+2026-09-14T06:13:24.9539356Z Processed genes 27000; elapsed 166.2s
+2026-09-14T06:13:43.3719551Z Processed genes 30000; elapsed 184.6s
+2026-09-14T06:14:01.9052575Z Processed genes 33000; elapsed 203.1s
+2026-09-14T06:14:22.9937072Z                context      method           model                     test  genes_tested  statistic_mean_t2  p_omnibus  p_holm_all_pilot_tests
+2026-09-14T06:14:22.9938741Z                     DA      rna_qc         age_sex               full_panel            23           0.851476    0.44645                  1.0000
+2026-09-14T06:14:22.9939851Z                     DA      rna_qc         age_sex frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9940888Z                     DA      rna_qc age_sex_PMI_RIN               full_panel            23           0.984671    0.22875                  1.0000
+2026-09-14T06:14:22.9941927Z                     DA      rna_qc age_sex_PMI_RIN frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9943051Z DA_minus_other_neurons      rna_qc         age_sex               full_panel             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9944208Z DA_minus_other_neurons      rna_qc         age_sex frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9945400Z DA_minus_other_neurons      rna_qc age_sex_PMI_RIN               full_panel             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9946574Z DA_minus_other_neurons      rna_qc age_sex_PMI_RIN frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9947673Z                     DA spearman_qc         age_sex               full_panel            23           0.962394    0.33280                  1.0000
+2026-09-14T06:14:22.9948917Z                     DA spearman_qc         age_sex frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9950395Z                     DA spearman_qc age_sex_PMI_RIN               full_panel            23           1.865344    0.03305                  0.5288
+2026-09-14T06:14:22.9951496Z                     DA spearman_qc age_sex_PMI_RIN frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9952630Z DA_minus_other_neurons spearman_qc         age_sex               full_panel             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9953809Z DA_minus_other_neurons spearman_qc         age_sex frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9955014Z DA_minus_other_neurons spearman_qc age_sex_PMI_RIN               full_panel             0                NaN        NaN                  1.0000
+2026-09-14T06:14:22.9956241Z DA_minus_other_neurons spearman_qc age_sex_PMI_RIN frozen_direction_profile             0                NaN        NaN                  1.0000
+2026-09-14T06:14:23.1088544Z ##[group]Run python tools/make_summary_tables.py --work-root work/public_gse243639
+2026-09-14T06:14:23.1089178Z [36;1mpython tools/make_summary_tables.py --work-root work/public_gse243639[0m
+2026-09-14T06:14:23.1162266Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-14T06:14:23.1162606Z env:
+2026-09-14T06:14:23.1162800Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:14:23.1163031Z   OMP_NUM_THREADS: 1
+2026-09-14T06:14:23.1163235Z   MKL_NUM_THREADS: 1
+2026-09-14T06:14:23.1163509Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1163929Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:14:23.1164349Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1164728Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1165097Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1165695Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:14:23.1166009Z ##[endgroup]
+2026-09-14T06:14:23.1527699Z Wrote work/public_gse243639/summary/gse243639_panel_tests_summary.csv
+2026-09-14T06:14:23.1528896Z Wrote work/public_gse243639/summary/gse243639_panel_tests.svg
+2026-09-14T06:14:23.1589899Z ##[group]Run python tools/compare_results.py --profile gse243639_edges264 --observed work/public_gse243639/results/gse243639_pilot_all_edges.csv --reference results_reference/public_gse243639/gse243639_pilot_all_edges.csv --out work/public_gse243639/gse243639_edges264_comparison.json
+2026-09-14T06:14:23.1591859Z [36;1mpython tools/compare_results.py --profile gse243639_edges264 --observed work/public_gse243639/results/gse243639_pilot_all_edges.csv --reference results_reference/public_gse243639/gse243639_pilot_all_edges.csv --out work/public_gse243639/gse243639_edges264_comparison.json[0m
+2026-09-14T06:14:23.1663333Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-14T06:14:23.1663696Z env:
+2026-09-14T06:14:23.1663925Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:14:23.1664167Z   OMP_NUM_THREADS: 1
+2026-09-14T06:14:23.1664376Z   MKL_NUM_THREADS: 1
+2026-09-14T06:14:23.1664652Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1665123Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:14:23.1665568Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1665959Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1666355Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.1666749Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:14:23.1667086Z ##[endgroup]
+2026-09-14T06:14:23.4646388Z {
+2026-09-14T06:14:23.4646794Z   "status": "PASS",
+2026-09-14T06:14:23.4647226Z   "profile": "gse243639_edges264",
+2026-09-14T06:14:23.4647673Z   "rows": 264,
+2026-09-14T06:14:23.4648215Z   "tolerance": 1e-12,
+2026-09-14T06:14:23.4648451Z   "checks": [
+2026-09-14T06:14:23.4648655Z     {
+2026-09-14T06:14:23.4648859Z       "column": "effect_z",
+2026-09-14T06:14:23.4649107Z       "match": true,
+2026-09-14T06:14:23.4649338Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4649567Z     },
+2026-09-14T06:14:23.4649753Z     {
+2026-09-14T06:14:23.4649961Z       "column": "ci_low",
+2026-09-14T06:14:23.4650197Z       "match": true,
+2026-09-14T06:14:23.4650420Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4650645Z     },
+2026-09-14T06:14:23.4650835Z     {
+2026-09-14T06:14:23.4651028Z       "column": "ci_high",
+2026-09-14T06:14:23.4651271Z       "match": true,
+2026-09-14T06:14:23.4651507Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4651737Z     },
+2026-09-14T06:14:23.4651922Z     {
+2026-09-14T06:14:23.4652114Z       "column": "se_hc3",
+2026-09-14T06:14:23.4652346Z       "match": true,
+2026-09-14T06:14:23.4652564Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4652849Z     },
+2026-09-14T06:14:23.4653147Z     {
+2026-09-14T06:14:23.4653343Z       "column": "t_hc3",
+2026-09-14T06:14:23.4653580Z       "match": true,
+2026-09-14T06:14:23.4653803Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4654030Z     },
+2026-09-14T06:14:23.4654213Z     {
+2026-09-14T06:14:23.4654408Z       "column": "p_wild",
+2026-09-14T06:14:23.4654644Z       "match": true,
+2026-09-14T06:14:23.4654871Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4655096Z     },
+2026-09-14T06:14:23.4655279Z     {
+2026-09-14T06:14:23.4655475Z       "column": "p_hc3_t",
+2026-09-14T06:14:23.4655720Z       "match": true,
+2026-09-14T06:14:23.4655941Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4656165Z     },
+2026-09-14T06:14:23.4656348Z     {
+2026-09-14T06:14:23.4656564Z       "column": "q_joint_pilot_family",
+2026-09-14T06:14:23.4656853Z       "match": true,
+2026-09-14T06:14:23.4657074Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.4657302Z     }
+2026-09-14T06:14:23.4657483Z   ]
+2026-09-14T06:14:23.4657666Z }
+2026-09-14T06:14:23.5106714Z ##[group]Run python tools/compare_results.py --profile gse243639_panel16 --observed work/public_gse243639/results/gse243639_pilot_panel_tests.csv --reference results_reference/public_gse243639/gse243639_pilot_panel_tests.csv --out work/public_gse243639/gse243639_panel16_comparison.json
+2026-09-14T06:14:23.5109236Z [36;1mpython tools/compare_results.py --profile gse243639_panel16 --observed work/public_gse243639/results/gse243639_pilot_panel_tests.csv --reference results_reference/public_gse243639/gse243639_pilot_panel_tests.csv --out work/public_gse243639/gse243639_panel16_comparison.json[0m
+2026-09-14T06:14:23.5180262Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-14T06:14:23.5180614Z env:
+2026-09-14T06:14:23.5180809Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:14:23.5181045Z   OMP_NUM_THREADS: 1
+2026-09-14T06:14:23.5181243Z   MKL_NUM_THREADS: 1
+2026-09-14T06:14:23.5181510Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.5181961Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:14:23.5182389Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.5182756Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.5183118Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.5183486Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:14:23.5183797Z ##[endgroup]
+2026-09-14T06:14:23.8171743Z {
+2026-09-14T06:14:23.8172093Z   "status": "PASS",
+2026-09-14T06:14:23.8172479Z   "profile": "gse243639_panel16",
+2026-09-14T06:14:23.8172882Z   "rows": 16,
+2026-09-14T06:14:23.8173186Z   "tolerance": 1e-12,
+2026-09-14T06:14:23.8173510Z   "checks": [
+2026-09-14T06:14:23.8173791Z     {
+2026-09-14T06:14:23.8174088Z       "column": "genes_tested",
+2026-09-14T06:14:23.8174453Z       "match": true,
+2026-09-14T06:14:23.8174784Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.8175124Z     },
+2026-09-14T06:14:23.8175392Z     {
+2026-09-14T06:14:23.8175708Z       "column": "statistic_mean_t2",
+2026-09-14T06:14:23.8176138Z       "match": true,
+2026-09-14T06:14:23.8176465Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.8176792Z     },
+2026-09-14T06:14:23.8177049Z     {
+2026-09-14T06:14:23.8177324Z       "column": "p_omnibus",
+2026-09-14T06:14:23.8177673Z       "match": true,
+2026-09-14T06:14:23.8178323Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.8178655Z     },
+2026-09-14T06:14:23.8178915Z     {
+2026-09-14T06:14:23.8179236Z       "column": "p_holm_all_pilot_tests",
+2026-09-14T06:14:23.8179644Z       "match": true,
+2026-09-14T06:14:23.8179962Z       "max_abs_diff": 0.0
+2026-09-14T06:14:23.8180287Z     }
+2026-09-14T06:14:23.8180563Z   ]
+2026-09-14T06:14:23.8180815Z }
+2026-09-14T06:14:23.8616440Z ##[group]Run python tools/environment_report.py --out work/public_gse243639/environment_public_gse243639.json
+2026-09-14T06:14:23.8617222Z [36;1mpython tools/environment_report.py --out work/public_gse243639/environment_public_gse243639.json[0m
+2026-09-14T06:14:23.8689175Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-14T06:14:23.8689532Z env:
+2026-09-14T06:14:23.8689730Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:14:23.8689958Z   OMP_NUM_THREADS: 1
+2026-09-14T06:14:23.8690158Z   MKL_NUM_THREADS: 1
+2026-09-14T06:14:23.8690434Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.8690870Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:14:23.8691301Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.8691671Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.8692034Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:23.8692434Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:14:23.8692748Z ##[endgroup]
+2026-09-14T06:14:25.5684513Z {
+2026-09-14T06:14:25.5685037Z   "python": "3.8.18 (default, Dec 12 2024, 19:15:02) \n[GCC 11.4.0]",
+2026-09-14T06:14:25.5685620Z   "platform": "Linux-6.8.0-1064-azure-x86_64-with-glibc2.34",
+2026-09-14T06:14:25.5686589Z   "executable": "/opt/hostedtoolcache/Python/3.8.18/x64/bin/python",
+2026-09-14T06:14:25.5687086Z   "threads": {
+2026-09-14T06:14:25.5687380Z     "OPENBLAS_NUM_THREADS": "1",
+2026-09-14T06:14:25.5687724Z     "OMP_NUM_THREADS": "1",
+2026-09-14T06:14:25.5688464Z     "MKL_NUM_THREADS": "1"
+2026-09-14T06:14:25.5688758Z   },
+2026-09-14T06:14:25.5689009Z   "python_packages": {
+2026-09-14T06:14:25.5689297Z     "numpy": "1.24.4",
+2026-09-14T06:14:25.5689584Z     "pandas": "2.0.3",
+2026-09-14T06:14:25.5689862Z     "scipy": "1.6.0",
+2026-09-14T06:14:25.5690151Z     "statsmodels": "0.14.1",
+2026-09-14T06:14:25.5690460Z     "h5py": "3.10.0"
+2026-09-14T06:14:25.5690740Z   },
+2026-09-14T06:14:25.5691075Z   "rscript_version": "Rscript (R) version 4.6.1 (2026-06-24)",
+2026-09-14T06:14:25.5691528Z   "r_packages": {
+2026-09-14T06:14:25.5691810Z     "status": "unavailable"
+2026-09-14T06:14:25.5692109Z   }
+2026-09-14T06:14:25.5692334Z }
+2026-09-14T06:14:25.6231234Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-14T06:14:25.6232562Z ##[group]Run actions/upload-artifact@v4
+2026-09-14T06:14:25.6232833Z with:
+2026-09-14T06:14:25.6233046Z   name: public-gse243639-rerun-artifacts
+2026-09-14T06:14:25.6234238Z   path: revision/2026-09-bioinformatics/work/public_gse243639/results/*.csv
+revision/2026-09-bioinformatics/work/public_gse243639/summary/*
+revision/2026-09-bioinformatics/work/public_gse243639/*comparison.json
+revision/2026-09-bioinformatics/work/public_gse243639/environment_public_gse243639.json
+
+2026-09-14T06:14:25.6235410Z   if-no-files-found: warn
+2026-09-14T06:14:25.6235645Z   compression-level: 6
+2026-09-14T06:14:25.6235869Z   overwrite: false
+2026-09-14T06:14:25.6236124Z   include-hidden-files: false
+2026-09-14T06:14:25.6236372Z env:
+2026-09-14T06:14:25.6236557Z   OPENBLAS_NUM_THREADS: 1
+2026-09-14T06:14:25.6236783Z   OMP_NUM_THREADS: 1
+2026-09-14T06:14:25.6236983Z   MKL_NUM_THREADS: 1
+2026-09-14T06:14:25.6237262Z   pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:25.6237692Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib/pkgconfig
+2026-09-14T06:14:25.6238475Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:25.6238873Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:25.6239252Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.8.18/x64
+2026-09-14T06:14:25.6239625Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
+2026-09-14T06:14:25.6239944Z ##[endgroup]
+2026-09-14T06:14:25.8183365Z (node:2225) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-14T06:14:25.8184395Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-14T06:14:25.8324219Z With the provided path, there will be 13 files uploaded
+2026-09-14T06:14:25.8331442Z Artifact name is valid!
+2026-09-14T06:14:25.8332323Z Root directory input is valid!
+2026-09-14T06:14:26.1770116Z Beginning upload of artifact content to blob storage
+2026-09-14T06:14:26.2205480Z (node:2225) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-14T06:14:26.5163164Z Uploaded bytes 69072
+2026-09-14T06:14:26.5726075Z Finished uploading artifact content to blob storage!
+2026-09-14T06:14:26.5727084Z SHA256 digest of uploaded artifact zip is d66461b4cd14d1fb5538ee34246b99312306fa013b94dac28a4dfc3cdbde82c9
+2026-09-14T06:14:26.5729651Z Finalizing artifact upload
+2026-09-14T06:14:26.8173406Z Artifact public-gse243639-rerun-artifacts.zip successfully finalized. Artifact ID 10334709983
+2026-09-14T06:14:26.8175106Z Artifact public-gse243639-rerun-artifacts has been successfully uploaded! Final size is 69072 bytes. Artifact ID is 10334709983
+2026-09-14T06:14:26.8182212Z Artifact download URL: https://github.com/krudo-taco/FOUNDIN_scRNA/actions/runs/34812299191/artifacts/10334709983
+2026-09-14T06:14:26.8378413Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-14T06:14:26.8379687Z Post job cleanup.
+2026-09-14T06:14:26.9687229Z (node:2237) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-14T06:14:26.9688411Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-14T06:14:26.9810808Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-14T06:14:26.9812120Z Post job cleanup.
+2026-09-14T06:14:27.0820268Z [command]/usr/bin/git version
+2026-09-14T06:14:27.0875515Z git version 2.55.0
+2026-09-14T06:14:27.0927383Z Temporarily overriding HOME='/home/runner/work/_temp/beabadb0-d3f9-4526-b442-73aa519aa855' before making global git config changes
+2026-09-14T06:14:27.0929094Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-14T06:14:27.0935299Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/FOUNDIN_scRNA/FOUNDIN_scRNA
+2026-09-14T06:14:27.0992888Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-14T06:14:27.1059378Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-14T06:14:27.1444323Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-14T06:14:27.1474110Z http.https://github.com/.extraheader
+2026-09-14T06:14:27.1486915Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-14T06:14:27.1527535Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-14T06:14:27.1827005Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-14T06:14:27.1873408Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-14T06:14:27.2313371Z Cleaning up orphan processes
+2026-09-14T06:14:27.2635542Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

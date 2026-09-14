@@ -83,3 +83,31 @@ jobs:
             revision/2026-09-bioinformatics/work/public_gse243639/summary/*
             revision/2026-09-bioinformatics/work/public_gse243639/*comparison.json
             revision/2026-09-bioinformatics/work/public_gse243639/environment_public_gse243639.json
+
+  manuscript-display:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: revision/2026-09-bioinformatics
+        shell: bash
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - run: python -m pip install -r requirements.txt -r manuscript_visuals/requirements.txt
+      - run: python manuscript_visuals/build_fig2_table4.py
+      - run: python manuscript_visuals/validate_fig2_table4.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: manuscript-figure2-table4
+          path: |
+            revision/2026-09-bioinformatics/manuscript_visuals/work/revised_figures/fig2_table4_validation.json
+            revision/2026-09-bioinformatics/manuscript_visuals/work/revised_figures/figures/*.pdf
+            revision/2026-09-bioinformatics/manuscript_visuals/work/revised_figures/figures/*.svg
+            revision/2026-09-bioinformatics/manuscript_visuals/work/revised_figures/tables/*.csv
