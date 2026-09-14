@@ -39,6 +39,7 @@ ROAST = ROOT / "04-reviewer-reanalysis/results/autophagy_panel_roast.csv"
 CAMERA = ROOT / "04-reviewer-reanalysis/results/camera_all_pathways.csv.gz"
 FOUNDIN_PROFILE = ROOT / "05-claim-support/results/foundin_regrouped_profile_effects.csv"
 FOUNDIN_PANEL = ROOT / "05-claim-support/results/foundin_regrouped_panel_tests.csv"
+KAMATH_SETTINGS = ROOT / "05-claim-support/results/kamath_analysis_settings.json"
 KAMATH_PROFILE = ROOT / "05-claim-support/results/kamath_profile_effects.csv"
 KAMATH_PANEL = ROOT / "05-claim-support/results/kamath_panel_profile_tests.csv"
 KAMATH_COVERAGE = ROOT / "05-claim-support/results/kamath_cell_coverage.csv"
@@ -419,7 +420,7 @@ def build_fig2_source(primary: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame
                 "ci_high": k["ci_high"],
                 "n_HC": int(k["n_HC"]),
                 "n_PD_or_iPD": int(k["n_PD"]),
-                "profile_genes": int(kp["genes_tested"]),
+                "profile_genes": len(json.loads(KAMATH_SETTINGS.read_text())["profile_genes"]),
                 "raw_profile_P": k["p_wild"],
                 "Holm_P": kp["p_Holm_primary_4"],
                 "status": k["status"],
@@ -818,6 +819,7 @@ def validation_record(outputs: dict[str, object]) -> None:
         CAMERA,
         FOUNDIN_PROFILE,
         FOUNDIN_PANEL,
+        KAMATH_SETTINGS,
         KAMATH_PROFILE,
         KAMATH_PANEL,
         KAMATH_COVERAGE,

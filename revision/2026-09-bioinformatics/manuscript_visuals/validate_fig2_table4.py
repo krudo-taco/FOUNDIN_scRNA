@@ -27,6 +27,9 @@ def sha256(path: Path) -> str:
 
 def main() -> None:
     primary = pd.read_csv(PRIMARY)
+    profile = pd.read_csv(PACKAGE / "source_data" / "Figure2_D_profile_source.csv")
+    settings = json.loads((PACKAGE / "source_data" / "kamath_analysis_settings.json").read_text())
+    assert profile.profile_genes.tolist() == [16, len(settings["profile_genes"])]
     table4 = pd.read_csv(PACKAGE_TABLE4)
     reference = pd.read_csv(REFERENCE_TABLE4)
     if primary.shape[0] != 86:

@@ -1,3 +1,3 @@
 dataset,display_dataset,effect_z,ci_low,ci_high,n_HC,n_PD_or_iPD,profile_genes,raw_profile_P,Holm_P,status
 FOUNDIN DA123 sensitivity,FOUNDIN DA123,0.0046079902675922,-0.0055342419559022,0.0147502224910866,8,28,16,0.28515,1.0,tested
-Kamath primary DA,Kamath DA,-0.0067744188318818,-0.0648979552664057,0.051349117602642,8,5,1,0.81885,1.0,tested
+Kamath primary DA,Kamath DA,-0.0067744188318818,-0.0648979552664057,0.051349117602642,8,5,16,0.81885,1.0,tested
